@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">SHA-256 RARS System Flow</title>
+  <desc id="desc">Input and file handling sends a message to the SHA-256 algorithm. The algorithm produces a 256-bit digest, which is formatted as hexadecimal and displayed. Integration testing checks the connections between components.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L11,6 L1,11 z" fill="#334155" />
+    </marker>
+    <style>
+      .title { font: 700 30px Arial, sans-serif; fill: #102a43; }
+      .subtitle { font: 16px Arial, sans-serif; fill: #486581; }
+      .box-title { font: 700 19px Arial, sans-serif; fill: #102a43; }
+      .box-text { font: 15px Arial, sans-serif; fill: #334e68; }
+      .label { font: 14px Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+  <rect width="1200" height="520" fill="#ffffff" />
+  <text x="600" y="55" text-anchor="middle" class="title">SHA-256 in RARS — Proposed System Flow</text>
+  <text x="600" y="83" text-anchor="middle" class="subtitle">Draft for the team to confirm and revise</text>
+
+  <rect x="45" y="190" width="190" height="115" rx="16" fill="#e8f2ff" stroke="#4c78a8" stroke-width="2" />
+  <text x="140" y="231" text-anchor="middle" class="box-title">User input</text>
+  <text x="140" y="260" text-anchor="middle" class="box-text">Message or file</text>
+  <text x="140" y="282" text-anchor="middle" class="box-text">to hash</text>
+
+  <rect x="285" y="190" width="210" height="115" rx="16" fill="#e8f2ff" stroke="#4c78a8" stroke-width="2" />
+  <text x="390" y="230" text-anchor="middle" class="box-title">Input / file</text>
+  <text x="390" y="255" text-anchor="middle" class="box-title">handling</text>
+  <text x="390" y="282" text-anchor="middle" class="box-text">Prepare message data</text>
+
+  <rect x="550" y="175" width="230" height="145" rx="16" fill="#e8f7ef" stroke="#3b8c68" stroke-width="2" />
+  <text x="665" y="222" text-anchor="middle" class="box-title">SHA-256</text>
+  <text x="665" y="247" text-anchor="middle" class="box-title">algorithm</text>
+  <text x="665" y="278" text-anchor="middle" class="box-text">Process the message</text>
+  <text x="665" y="299" text-anchor="middle" class="box-text">and produce a digest</text>
+
+  <rect x="835" y="190" width="185" height="115" rx="16" fill="#fff5df" stroke="#d19a32" stroke-width="2" />
+  <text x="927" y="230" text-anchor="middle" class="box-title">Hex formatting</text>
+  <text x="927" y="260" text-anchor="middle" class="box-text">Convert digest</text>
+  <text x="927" y="282" text-anchor="middle" class="box-text">to hexadecimal</text>
+
+  <rect x="1060" y="190" width="105" height="115" rx="16" fill="#f2eaff" stroke="#8064a2" stroke-width="2" />
+  <text x="1112" y="239" text-anchor="middle" class="box-title">Output</text>
+  <text x="1112" y="268" text-anchor="middle" class="box-text">Hex</text>
+  <text x="1112" y="289" text-anchor="middle" class="box-text">digest</text>
+
+  <line x1="235" y1="247" x2="275" y2="247" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="495" y1="247" x2="540" y2="247" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="780" y1="247" x2="825" y2="247" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="1020" y1="247" x2="1050" y2="247" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="518" y="226" text-anchor="middle" class="label">message</text>
+  <text x="807" y="226" text-anchor="middle" class="label">256-bit digest</text>
+
+  <rect x="300" y="385" width="600" height="75" rx="14" fill="#f7f9fc" stroke="#829ab1" stroke-width="2" stroke-dasharray="8 6" />
+  <text x="600" y="416" text-anchor="middle" class="box-title">Communication / integration testing</text>
+  <text x="600" y="442" text-anchor="middle" class="box-text">Check that components pass the expected data and compare final output with test vectors.</text>
+  <path d="M390 305 L390 350 L430 385" fill="none" stroke="#829ab1" stroke-width="2" stroke-dasharray="7 5" />
+  <path d="M665 320 L665 380" fill="none" stroke="#829ab1" stroke-width="2" stroke-dasharray="7 5" />
+  <path d="M927 305 L927 350 L870 385" fill="none" stroke="#829ab1" stroke-width="2" stroke-dasharray="7 5" />
+</svg>
